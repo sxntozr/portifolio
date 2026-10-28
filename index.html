@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de design gráfico de João Santos.">
+    <title>BY João Santos | Design Gráfico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">BY<span>JS</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato" class="nav-contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">DESIGN GRÁFICO • IDENTIDADE VISUAL</p>
+
+                    <h1>Ideias que viram <span>design.</span></h1>
+
+                    <p class="hero-description">
+                        Criatividade, identidade e propósito em cada detalhe.
+                        Conheça meu trabalho e descubra como posso dar vida
+                        às suas ideias.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="button button-red">
+                            Ver projetos
+                        </a>
+                        <a href="#contato" class="button button-outline">
+                            Fale comigo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-art" aria-label="Arte gráfica decorativa">
+                    <div class="art-circle"></div>
+                    <div class="art-square"></div>
+                    <div class="art-line"></div>
+                    <span class="art-letter">JS.</span>
+                    <span class="art-caption">DESIGN WITH PURPOSE</span>
+                    <span class="art-number">001 / 026</span>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>CRIATIVIDADE SEM LIMITES</span>
+            </div>
+        </section>
+
+        <section class="about section" id="sobre">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img
+                        src="images/minha-foto.png"
+                        alt="Foto de João Santos"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                    >
+                    <div class="photo-placeholder">
+                        <span>SUA FOTO AQUI</span>
+                    </div>
+                    <span class="image-label">JOÃO SANTOS — DESIGNER</span>
+                </div>
+
+                <div class="about-text">
+                    <p class="eyebrow">UM POUCO SOBRE MIM</p>
+                    <h2>Olá, sou o <span>João Santos.</span></h2>
+
+                    <p>
+                        Sou apaixonado por design gráfico e pela capacidade
+                        que a comunicação visual tem de transformar ideias
+                        em algo marcante.
+                    </p>
+
+                    <p>
+                        Meu foco está na criação de identidades visuais,
+                        logotipos, banners, convites e materiais gráficos
+                        que transmitam a personalidade de cada projeto.
+                    </p>
+
+                    <p>
+                        Estou sempre buscando aprender, experimentar novas
+                        ideias e desenvolver trabalhos com criatividade,
+                        cuidado e atenção aos detalhes.
+                    </p>
+
+                    <a href="#contato" class="text-link">
+                        Vamos criar algo juntos? ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projetos">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">MEU TRABALHO</p>
+                        <h2>Projetos em <span>destaque.</span></h2>
+                    </div>
+
+                    <p class="heading-description">
+                        Uma seleção de categorias que fazem parte do meu
+                        universo criativo.
+                    </p>
+                </div>
+
+                <div class="filters" aria-label="Filtrar projetos">
+                    <button class="filter-btn active" data-filter="todos">
+                        Todos
+                    </button>
+                    <button class="filter-btn" data-filter="logos">
+                        Logotipos
+                    </button>
+                    <button class="filter-btn" data-filter="banners">
+                        Banners
+                    </button>
+                    <button class="filter-btn" data-filter="convites">
+                        Convites
+                    </button>
+                    <button class="filter-btn" data-filter="escolares">
+                        Escolares
+                    </button>
+                    <button class="filter-btn" data-filter="outros">
+                        Outros
+                    </button>
+                </div>
+
+                <div class="project-grid">
+
+                    <article class="project-card" data-category="logos">
+                        <div class="project-art logo-art">
+                            <img src="images/projeto1.jpeg" alt="Logotipo" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Identidade visual</h3>
+                                <p>Logotipos e marcas</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="banners">
+                        <div class="project-art banner-art">
+                            <img src="images/projeto2.jpeg" alt="Banner" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Banners digitais</h3>
+                                <p>Divulgação e publicidade</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="convites">
+                        <div class="project-art invite-art">
+                            <img src="images/projeto3.jpeg" alt="Convite" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Convites</h3>
+                                <p>Eventos e comemorações</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="escolares">
+                        <div class="project-art school-art">
+                            <img src="images/projeto4.jpeg" alt="Projeto escolar" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Projetos escolares</h3>
+                                <p>Apresentações e materiais</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contato">
+            <div class="container contact-content">
+                <p class="eyebrow">VAMOS CONVERSAR?</p>
+                <h2>Seu próximo projeto começa <span>aqui.</span></h2>
+
+                <p>
+                    Tem uma ideia, precisa de uma arte ou quer desenvolver
+                    uma identidade visual? Entre em contato comigo.
+                </p>
+
+                <div class="contact-buttons">
+                    <a
+                        href="https://wa.me/5584981789462?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20seus%20conhecimentos%20acerca%20de%20Design."
+                        class="button button-white"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp ↗
+                    </a>
+
+                    <a
+                        href="https://instagram.com/joao.snttos"
+                        class="button button-contact-outline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram ↗
+                    </a>
+
+                    <a
+                        href="https://github.com/sxntozr"
+                        class="button button-contact-outline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="contact-decoration">BY.</div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#inicio" class="logo footer-logo">
+                BY <span>JOÃO SANTOS</span>
+            </a>
+
+            <p>Design feito com criatividade e propósito.</p>
+
+            <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+        </div>
+
+        <div class="container copyright">
+            <span>
+                © <span id="year"></span> BY João Santos. Todos os direitos reservados.
+            </span>
+
+            <a href="mailto:by.joaopedrojs@gmail.com">
+                Email para contato: by.joaopedrojs@gmail.com
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Menu para celulares
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("show");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Fechar menu" : "Abrir menu"
+            );
+
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        // Fechar o menu após clicar em um link
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("show");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Abrir menu");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        // Filtro dos projetos
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const filter = button.dataset.filter;
+
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                projectCards.forEach(card => {
+                    const matches =
+                        filter === "todos" ||
+                        card.dataset.category === filter;
+
+                    card.hidden = !matches;
+                });
+            });
+        });
+
+        // Ano automático no rodapé
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
